@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="is-locked">
 
   <div class="page-wrapper">
     <div class="container">
@@ -27,8 +27,27 @@
         </div>
       </header>
 
+      <!-- Login Gate -->
+      <div id="login-screen">
+        <div class="login-box">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            Private Access
+          </div>
+          <p class="login-text">
+            To access this on-demand, interactive workflow setup page, enter the first word from Prompt 1.
+          </p>
+          <form id="login-form" autocomplete="off">
+            <input type="text" id="login-input" class="login-input" placeholder="Enter the word" aria-label="Access word" />
+            <button type="submit" class="btn btn-primary login-submit">Enter</button>
+          </form>
+          <p id="login-error" class="login-error" hidden>That word isn't right. Try again.</p>
+        </div>
+      </div>
+
 
       <!-- Hero Section -->
+      <main id="protected-content">
       <section class="hero">
         <div class="eyebrow">
           <span class="eyebrow-line"></span>
@@ -310,6 +329,7 @@ Begin now: if no foundation is provided, start the Foundation Wizard at Step 0.
       <footer class="site-footer">
         <div>Based on <em>Behind the Lens, Not the Desk</em> by Peter von Peterhof</div>
       </footer>
+      </main>
 
     </div>
   </div>

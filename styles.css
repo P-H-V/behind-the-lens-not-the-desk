@@ -58,6 +58,77 @@ body {
   height: 32px;
 }
 
+/* Login gate */
+#login-screen {
+  display: block;
+  padding-top: 20px;
+}
+
+body.is-unlocked #login-screen {
+  display: none;
+}
+
+#login-screen.is-hidden {
+  display: none;
+}
+
+body.is-locked #protected-content {
+  display: none;
+}
+
+.login-box {
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px 36px;
+}
+
+.login-box .eyebrow {
+  margin-bottom: 16px;
+}
+
+.login-text {
+  font-size: 17px;
+  color: var(--text-primary);
+  margin: 0 0 28px;
+  line-height: 1.6;
+}
+
+#login-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.login-input {
+  flex: 1;
+  padding: 14px 18px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-size: 15px;
+  font-family: var(--font-body);
+  outline: none;
+}
+
+.login-input:focus {
+  border-color: var(--accent);
+}
+
+.login-submit {
+  padding: 14px 28px;
+  flex-shrink: 0;
+}
+
+.login-error {
+  color: #a94442;
+  font-size: 14px;
+  margin: 14px 0 0;
+}
+
 /* Hero */
 .hero {
   background-color: var(--bg-card);
