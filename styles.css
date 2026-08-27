@@ -53,19 +53,13 @@ body {
 }
 
 .brand-icon {
-  width: 18px;
-  height: 18px;
-  border: 2px dashed var(--accent);
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  color: var(--text-secondary);
+  font-size: 32px;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
 }
 
 /* Hero */
@@ -226,7 +220,7 @@ body {
 
 .step-number {
   font-family: var(--font-heading);
-  font-size: 32px;
+  font-size: 80px;
   font-weight: 700;
   color: var(--accent);
   margin-bottom: 16px;
@@ -249,7 +243,7 @@ body {
 }
 
 .runner-icon {
-  font-size: 24px;
+  font-size: 60px;
   margin-bottom: 20px;
   color: var(--accent);
 }
